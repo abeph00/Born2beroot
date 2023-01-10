@@ -14,169 +14,169 @@
 
 ## 📝COMANDOS UTILES
 
-> _ REBOOT: Reiniciar el sistema
+> REBOOT: Reiniciar el sistema
 
-> _SUDO -V: Nos muestra la version de sudo y también los argumentos pasados para configurar cuando se creo sudo
+> SUDO -V: Nos muestra la version de sudo y también los argumentos pasados para configurar cuando se creo sudo
 
-> _KERNEL Y SO: uname -a
+> KERNEL Y SO: uname -a
 
-> _SUDO AA-STATUS: Estado del AppArmor
+> SUDO AA-STATUS: Estado del AppArmor
 
-> _LSBLK: Listar las particiones
+> LSBLK: Listar las particiones
 
-> _SHASUM“nombre de archivo”: Permite leer el .vdi de nuestra firma.
+> SHASUM“nombre de archivo”: Permite leer el .vdi de nuestra firma.
 
-> _SYSTEMCTL ENABLE/DISABLE CRON
+> SYSTEMCTL ENABLE/DISABLE CRON
 
-> _SYSTEMCTL START/STOP CRON
+> SYSTEMCTL START/STOP CRON
 
-> _SUDO CRONTAB -e: Archivo donde modificamos cada cuanto se ejecuta el script.
+> SUDO CRONTAB -e: Archivo donde modificamos cada cuanto se ejecuta el script.
 
-> _SUDO ADDUSER LOGIN: Crear un usuario.
+> SUDO ADDUSER LOGIN: Crear un usuario.
 
-> _SUDO ADDGROUP GRUPO: Crear un grupo.
+> SUDO ADDGROUP GRUPO: Crear un grupo.
 
-> _GETENT GROUP GRUPO: Consultar un grupo.
+> GETENT GROUP GRUPO: Consultar un grupo.
 
-> _CAT /ETC/GROUP: Todos los grupos y los usuarios.
+> CAT /ETC/GROUP: Todos los grupos y los usuarios.
 
-> _SUDO ADDUSER USER GRUPO: Añadir un usuario en un grupo.
+> SUDO ADDUSER USER GRUPO: Añadir un usuario en un grupo.
 
-> _/etc/hostname: Cambiar host name.
+> /etc/hostname: Cambiar host name.
 
-> _/etc/hosts: Cambiar host name.
+> /etc/hosts: Cambiar host name.
 
-> _SUDO HOSTNAMECTL SET-HOSTNAME “NOMBRE”: Cambiar host name.
+> SUDO HOSTNAMECTL SET-HOSTNAME “NOMBRE”: Cambiar host name.
 
-> _SUDO APT UPDATE: Actualizar los repositorios del archivo.
+> SUDO APT UPDATE: Actualizar los repositorios del archivo.
 
-> _SUDO APT INSTALL OPENSSH-SERVER: Instalar la herramienta OpenSSH
+> SUDO APT INSTALL OPENSSH-SERVER: Instalar la herramienta OpenSSH
 
-> _/etc/ssh/sshd_config: Este archivo es el ssh server system wide configuration
+> /etc/ssh/sshd_config: Este archivo es el ssh server system wide configuration
 
-> _ssh "USER"@localhost -p 4242 : conectarse mediante ssh a la MV.
+> ssh "USER"@localhost -p 4242 : conectarse mediante ssh a la MV.
 
-> _SUDO SYSTEMCTL STATUS SSH: Estado del servicio ssh.
+> SUDO SYSTEMCTL STATUS SSH: Estado del servicio ssh.
 
-> _SUDO SYSTEMCTL RESTART SSH
+> SUDO SYSTEMCTL RESTART SSH
 
-> _SUDO APT INSTALL UFW: Instalar UFW.
+> SUDO APT INSTALL UFW: Instalar UFW.
 
-> _SUDO UFW ALLOW 4242: Permitir que nuestro firewall permita las conexiones a través del puerto 4242.
+> SUDO UFW ALLOW 4242: Permitir que nuestro firewall permita las conexiones a través del puerto 4242.
 
-> _SUDO UFW STATUS: Estado de nuestro cortafuegos.
+> SUDO UFW STATUS: Estado de nuestro cortafuegos.
 
-> _SUDO PASSWD: Cambiar contraseña
+> SUDO PASSWD: Cambiar contraseña
 
-> _/etc/sudoers.d/sudo_config: Almacenara la configuración de las contraseñas
+> /etc/sudoers.d/sudo_config: Almacenara la configuración de las contraseñas
 
-> _/var/log/sudo: Donde quedara almacenado cada comando tanto output como input
+> /var/log/sudo: Donde quedara almacenado cada comando tanto output como input
 
-> _/etc/login.defs: Fichero donde modificaremos los parámetros de política de contraseña fuerte. En cuanto a días.
+> /etc/login.defs: Fichero donde modificaremos los parámetros de política de contraseña fuerte. En cuanto a días.
 
- > _/etc/pam.d/common-password: Fichero donde estableceremos las condiciones de una buena contraseña.
+> /etc/pam.d/common-password: Fichero donde estableceremos las condiciones de una buena contraseña.
 
-> _/etc/security/pwquality.conf: Tambien podríamos haberlo hecho aqui
+> /etc/security/pwquality.conf: Tambien podríamos haberlo hecho aqui
 
 
 ## ❗COSAS QUE NECESITAS SABER PARA ESTE PROYECTO
 
-> _VIRTUALIZACION
+> VIRTUALIZACION
 Representation o imitation de un sistema. Representación virtual de un sistema físico.  Se utiliza para lograr mas eficiencia, mejorar los procesos de la administración de los sistema, otorga fiabilidad. Ahorro energético, creación y recuperación mas ágil. Entornos de prueba temporales. 
 
-> _HYPERVISOR
+> HYPERVISOR
 La capa que esta encima del servidor físico. Software que crea y ejecuta las maquinas o servidores virtuales y que pone a disposicion el hardware del servidor fisico.
 
-> _CPU
+> CPU
 Es el corazón de la computadora. El procesador. Por donde pasa toda la información, la analiza y decide que hacer con ella. Coordina y procesa.
 
-> _RAM
+> RAM
 Es donde se almacenan de forma temporal los datos de los programas que estas utilizando en este momento. Random Access Memory.  Gran velocidad y los datos solo se almacenan de forma temporal. Esta relacionada directamente con el rendimiento del dispositivo.
 
-> _PLACA BASE
+> PLACA BASE
 Es el componente común donde se interconectan todos los demás componentes. 
 
-> _SISTEMA OPERATIVO
+> SISTEMA OPERATIVO
 Es el software que gestiona todos los recursos de un sistema informático permitiendo la comunicación entre el usuario y la computadora.
 
 > _DEBIAN
 Sistema operativo. Porque es mucho mas sencillo en su utilización e instalación. Sus características mas apreciadas son la estabilidad y los procesos de actualización de paquetes. Funciona en numerosas arquitecturas y dispositivos y ofrece un sistema de seguimiento de incidencias publico.
 
-> _SERVIDOR
+> SERVIDOR
 Programa que hace una serie de servicios. Almacenar archivos y distribuirlos. Varios tipos de servidores. Puede ser cliente y servidor a la vez. Equipo que tiene instalado un software que sirve servicios útiles o información que necesitamos.
 
-> _MAQUINA VIRTUAL
+> MAQUINA VIRTUAL
 Un software que permite emular el funcionamiento de un ordenador dentro de otro ordenador con todos los componentes de hardware de un orennador real que necesita para funcionar.
 
-> _PARTICION
+> PARTICION
 El nombre que recibe cada una de las divisiones presentes en un disco duro.
   -PRIMARIA: Divisiones del disco que dependen de una tabla de particiones y son las que detecta el ordenador al arracar, es donde se instalan los SO. Max 4.
  -SECUNDARIA: Fue ideada para poder tener mas de 4 particiones, aunque no se puede instalar en ella un SO. 
  -LOGICA: Son las particiones que se hacen dentro de un particiones extendida. Funciona como si fueran dispositivos independientes.
 
-> _SISTEMA DE ARCHIVOS
+> SISTEMA DE ARCHIVOS
 Los sistemas de archivos se encargan de administrar y facilitar el uso de memorias de nuestro equipo. Sus principales funciones son la asignación del espacio libre y la administración del acceso a los datos
 
-> _EXT4
+> EXT4
 Sistema de archivos que permite trabajar con volúmenes de gran tamaño. Rápido y fiable. Sucesor de ext2/3
 
-> _LV
+> LV
 Volumen lógico es cada uno de los trozos lógicos en los que se puede dividir un volume group. Algo semejante a una partición de volumen lógico.
 
-> _LVM
+> LVM
 Es un método de localización del espacio del disco duro en volumenes lógicos que pueden ser fácilmente redimensionados en vez de particiones.
 
-> _SSH
+> SSH
 Es el nombre de un protocolo y del programa que lo implementa cuya principal función es el acceso remoto a un servidor por medio de un canal seguro en el que toda la información está cifrada.
 
-> _BIOS
+> BIOS
 Pequeño chip en la placa base que se encarga de initializer y verificar diferentes componente del sistema.
 
-> _ENCRIPTAR
+> ENCRIPTAR
 Ocultar el contenido de un mensaje para poder desvelar ese contenido. 
 
-> _MOUNT POINT
+> MOUNT POINT
 Es una ubicación en la partición utilizada como sistema de archivos raiz.
 
-> _SUDO
+> SUDO
 Es una utilidad que permite a los usuarios ejecutar programas con los privilegios de seguridad de otro usuario normalmente root. 
 
-> _FIREWALL
+> FIREWALL
 También llamado cortafuegos es un sistema cuya función es prevenir y proteger a nuestra red privada de intrusiones o ataques de otras redes bloqueando el acceso. 
 
-> _GID
+> GID
 El identificador de grupo, abreviatura de group id.
 
-> _UFW
+> UFW
 Es un firewall el cual utiliza la línea de comandos para configurar las iptables usando un pequeño número de comandos simples
 
-> _SCRIPT
+> SCRIPT
  Es una secuencia de comandos guardada en un fichero que cuando se ejecuta hara la funcion de cada comando.
 
-> _KERNEL
+> KERNEL
 Nucleo del sistema operativo, se encarga principalmente de mediar entre los procesos de usuario y el hardware disponible en la maquina. Concede al software acceso al hardware
 
-> _DISK SIGNATURE
+> DISK SIGNATURE
 Es un numero distintivo y unico de un disco duro u otro dispositivo de almacenaje que es parte del master root record. 
 
-> _.VDI
+> .VDI
 Virtual Disk Image. 
 
-> _APT
+> APT
 Advantage Package Tool. Es un administrator de paquetes de bajo nivel. Instalacion y desinstalacion de paquetes.
 
-> _APTITUDE
+> APTITUDE
 Administrador de paqueres de alto nivel. Gestiona mejor las de dependencias de los paquetes. Incluye mas opciones.
 
-> _APPARMOR
+> APPARMOR
 Es un modelo de seguridad del kernel Linux que permite al administrador del sistema restringir las capacidades de un programa. Para definir las restricciones asocia a cada programa un perfil de seguridad.
 
-> _MAC
+> MAC
 Mandatory access control.  Se refiere a un tipo de control de acceso en el que el sistema operativo limita la habilidad del sujeto de realizar algún tipo de operación en algún objetivo.
 
-> _PHP
+> PHP
 Lenguaje de programación interpretado. No se compila. Incrustracion de html. Dinamismo. Php solo es interpretado por el servidor no por el cliente.
 
-> _MYSQL
+> MYSQL
 Sistema de gestión de bases de datos relaciones de código abierto y basado en SQL.
 
