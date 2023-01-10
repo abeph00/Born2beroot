@@ -174,7 +174,7 @@ Es un modelo de seguridad del kernel Linux que permite al administrador del sist
 > _MAC
 Mandatory access control.  Se refiere a un tipo de control de acceso en el que el sistema operativo limita la habilidad del sujeto de realizar algún tipo de operación en algún objetivo.
 
-PHP
+> _PHP
 Lenguaje de programación interpretado. No se compila. Incrustracion de html. Dinamismo. Php solo es interpretado por el servidor no por el cliente.
 
 > _MYSQL
